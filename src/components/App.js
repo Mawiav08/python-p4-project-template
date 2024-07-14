@@ -5,7 +5,6 @@ import Home from './Home';
 import MensShoes from './MensShoes';
 import WomensShoes from './WomensShoes';
 import KidsShoes from './KidsShoes';
-import Cart from './Cart';  
 
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
           <Route path="/mens-shoes" component={MensShoes} />
           <Route path="/womens-shoes" component={WomensShoes} />
           <Route path="/kids-shoes" component={KidsShoes} />
-          <Route path="/cart" component={Cart} /> 
         </Switch>
       </div>
     </Router>
