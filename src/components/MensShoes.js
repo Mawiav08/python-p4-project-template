@@ -10,9 +10,19 @@ const products = [
   {title: 'Product 6', description: 'Description 6', price: 'Ksh.1400'},
   {title: 'Product 7', description: 'Description 7', price: 'Ksh.300'},
   {title: 'Product 8', description: 'Description 8', price: 'Ksh.1250'},
-  {title: 'Product 9', description: 'Description 9', price: 'Ksh.1500'}
-
-
+  {title: 'Product 9', description: 'Description 9', price: 'Ksh.1500'},
+  {title: 'Product 10', description: 'Description 10', price: 'Ksh.1500'},
+  {title: 'Product 11', description: 'Description 11', price: 'Ksh.1500'},
+  {title: 'Product 12', description: 'Description 12', price: 'Ksh.1700'},
+  {title: 'Product 13', description: 'Description 13', price: 'Ksh.1500'},
+  {title: 'Product 14', description: 'Description 14', price: 'Ksh.1500'},
+  {title: 'Product 15', description: 'Description 15', price: 'Ksh.1500'},
+  {title: 'Product 16', description: 'Description 16', price: 'Ksh.1500'},
+  {title: 'Product 17', description: 'Description 17', price: 'Ksh.1500'},
+  {title: 'Product 18', description: 'Description 18', price: 'Ksh.1500'},
+  {title: 'Product 19', description: 'Description 19', price: 'Ksh.1500'},
+  {title: 'Product 20', description: 'Description 20', price: 'Ksh.1500'},
+  {title: 'Product 21', description: 'Description 21', price: 'Ksh.1500'}
 ];
 
 const MensShoes = () => {

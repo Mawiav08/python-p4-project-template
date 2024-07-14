@@ -1,18 +1,31 @@
+
+
+
 import React from 'react';
 import './KidsShoes.css';
 
 const products = [
-  { title: 'Product 1', description: 'Description 1', price: 'Ksh.1,000' },
-  { title: 'Product 2', description: 'Description 2', price: 'Ksh.700' },
-  {title: 'Product 3', description: 'Description 3', price: 'Ksh.700'},
-  {title: 'Product 4', description: 'Description 4', price: 'Ksh,900'},
-  {title: 'Product 5', description: 'Description 5', price: 'Ksh.1200'},
-  {title: 'Product 6', description: 'Description 6', price: 'Ksh.1400'},
-  {title: 'Product 7', description: 'Description 7', price: 'Ksh.300'},
-  {title: 'Product 8', description: 'Description 8', price: 'Ksh.1250'},
-  {title: 'Product 9', description: 'Description 9', price: 'Ksh.1500'}
-
-
+  {  description: 'Roller skates', price: 'Ksh.1,000', img: 'https://i.pinimg.com/originals/bd/56/64/bd56642b128b9e74837602cbb856d9d5.jpg' },
+  {  description: 'Dress shoes', price: 'Ksh.700', img: 'https://i.pinimg.com/originals/a9/c8/b4/a9c8b4ff79f6b10f6f4bc882db5a54cb.jpg' },
+  {  description: 'Trainer shoes', price: 'Ksh.700', img: 'https://i.pinimg.com/originals/95/41/0c/95410cbf8481ae8429c9b2a3b1f8d9f6.jpg' },
+  {  description: 'Nike dunks', price: 'Ksh.900', img: 'https://i.pinimg.com/originals/13/c6/76/13c676df5e2105d5f748fd12f456ff7e.jpg' },
+  {  description: 'Dress shoes (white)', price: 'Ksh.1200', img: 'https://i.pinimg.com/originals/9c/d4/7f/9cd47f8a4a8f1742786c1c0cc82e6f9e.jpg' },
+  {  description: 'Canvas b&w', price: 'Ksh.1400', img: 'https://i.pinimg.com/originals/79/3a/09/793a09e2baefb981c83963467b7df758.jpg' },
+  {  description: 'Toddler girl sandals', price: 'Ksh.300', img: 'https://i.pinimg.com/originals/0a/9d/5d/0a9d5dddb60dfd9b8e963b46df8dc0c5.jpg' },
+  {  description: 'Roma Sandals', price: 'Ksh.1250', img: 'https://i.pinimg.com/originals/42/75/1d/42751d8b18347d2fc7a0b24b9bff4458.jpg' },
+  {  description: 'Jelly sandals', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/03/9a/1f/039a1ff15b25b4c4b199b44db4a2d8d1.jpg' },
+  {  description: 'Winter boots', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/70/c0/7a/70c07ab91a94f988c43a7322fd810b49.jpg' },
+  {  description: 'White crocs', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/6e/3a/ab/6e3aab2b8b79d5827cb11b8aa7e3dc6e.jpg' },
+  {  description: 'Black crocs', price: 'Ksh.1700', img: 'https://i.pinimg.com/originals/89/3c/22/893c229063f255b4f72aa4c779c5e8c0.jpg' },
+  {  description: 'Baby sneakers', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/75/5a/d4/755ad4edab12a4b737d9df92e19c4c83.jpg' },
+  {  description: 'Slip on sandals', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/fd/7d/84/fd7d84b7de8eb153e3b71d790c84cd56.jpg' },
+  {  description: 'Vans old skool', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/fc/1b/5d/fc1b5d4417039e81b1f316d35c3fae4d.jpg' },
+  {  description: 'Old navy flipflops', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/9f/95/17/9f951759021cd46954eb3c1119738f6e.jpg' },
+  {  description: 'Girls’ boots', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/0b/1e/0c/0b1e0caa138d1cf77a7c63622d18db17.jpg' },
+  {  description: 'Baby loafers', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/19/31/0b/19310b1183f92d97047f3c3aa9ae1c5f.jpg' },
+  {  description: 'Play shoes', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/fd/ed/83/fded83c54625a59dbe2657b97d0d9d24.jpg' },
+  {  description: 'Hook & loop sandals', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/70/0c/b7/700cb7028fa0e0da9d30b4d1233f6e96.jpg' },
+  {  description: 'Paw patrol sneakers', price: 'Ksh.1500', img: 'https://i.pinimg.com/originals/0f/0b/26/0f0b2682726d4b53bf6c4d2cdd7035d5.jpg' },
 ];
 
 const KidsShoes = () => {
@@ -20,8 +33,8 @@ const KidsShoes = () => {
     <div className="collection-container">
       {products.map((product, index) => (
         <div className="card" key={index}>
-          <div className="card-img"> 
-          
+          <div className="card-img">
+            <img src={product.img} alt={product.title} />
           </div>
           <div className="card-info">
             <p className="text-title">{product.title}</p>
@@ -44,4 +57,3 @@ const KidsShoes = () => {
 };
 
 export default KidsShoes;
-
