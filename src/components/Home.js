@@ -1,6 +1,8 @@
+// src/components/Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
+import NavBar from './NavBar';
+import './Home.css';
 
 const shoes = [
   { id: 1, name: 'Mens Shoes', path: '/mens-shoes' },
@@ -11,6 +13,7 @@ const shoes = [
 function Home() {
   return (
     <div>
+      <NavBar />
       <header className="App-header">
         <h1>Welcome to ShoeGalore</h1>
         <p>Your one-stop shop for good quality shoes!</p>
